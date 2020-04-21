@@ -48,7 +48,7 @@ render() {
   return (
     <div className="directory-menu">
         {
-        // Deconstructing section.title, section.imageUrl, section.id
+        // Deconstructing section.title, section.imageUrl, section.id and section.size
           this.state.sections.map(({ title, imageUrl, id , size}) => {
              return  <MenuItem key={id} title={title} imageUrl={imageUrl} size={size}/>;
           })
