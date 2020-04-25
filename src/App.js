@@ -3,6 +3,7 @@ import { Route, Switch, Link } from 'react-router-dom';
 import HomePage from './pages/homepage/homepage.component';
 import ShopPage from './pages/shop/shop.component';
 import Header from './components/header/header.component';
+import SignInSignUp from './pages/sign-in-sign-up/sign-in-sign-up.component';
 import './App.css';
 
 const HatsPage = () => {
@@ -20,8 +21,8 @@ function App() {
           <Header/>
           <Switch>
             <Route exact path="/" component={HomePage}/>
-            <Route path="/hats" component={HatsPage}/>
-            <Route path="/shop" component={ShopPage}></Route>
+            <Route path="/shop" component={ShopPage}/>
+            <Route path="/sign-in" component={SignInSignUp}/>
           </Switch>
         </div>
   )

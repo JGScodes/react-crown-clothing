@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+// { ReactComponent as Logo } is a special react library syntax for importing svg files
 import { ReactComponent as Logo } from '../../assets/crown.svg';
 import './header.styles.scss';
 
